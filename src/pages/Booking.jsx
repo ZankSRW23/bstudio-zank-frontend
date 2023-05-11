@@ -44,7 +44,7 @@ export default function Booking() {
           time_in : timeRange.start,
           time_out : timeRange.end,
         });
-        console.log(res.data);
+        // console.log(res.data);
         alert("จองสำเร็จ");
         handleSearch();
       } catch (e) {
@@ -67,7 +67,7 @@ export default function Booking() {
       const res = await useAxios.get(
         `/rooms/available?date=${formatDate}&time_in=${timeRange.start}&time_out=${timeRange.end}&type=${roomType}`
       );
-      console.log(res);
+      // console.log(res);
       setRoomDetail(res.data);
     } catch (e) {
       console.log(e);
