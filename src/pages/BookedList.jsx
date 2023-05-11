@@ -19,7 +19,7 @@ export default function BookedList() {
   const fetchBooked = async () => {
     try {
       const res = await useAxios.get("/history");
-      // console.log(res.data);
+      console.log(res.data);
       setBooked(res.data.reverse());
     } catch (e) {
       console.log(e);
@@ -31,11 +31,11 @@ export default function BookedList() {
       const res = await useAxios.delete(`/history/${id}`);
       // console.log(res.data);
       alert("ยกเลิกสำเร็จ");
-      fetchBooked();s
+      fetchBooked();
     } catch (e) {
       console.log(e);
 
-      alert("ยกเลิกไม่สำเร็จ");
+      // alert("ยกเลิกไม่สำเร็จ");
     }
   };
 
