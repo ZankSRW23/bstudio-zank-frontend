@@ -46,7 +46,7 @@ export default function Home() {
             alignItems: "center",
           }}
         >
-          <img src="/src/assets/logo.png" width={320} />
+          <img src="logo.png" width={320} />
 
           <Box
             width={450}

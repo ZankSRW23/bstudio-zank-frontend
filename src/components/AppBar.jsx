@@ -27,7 +27,7 @@ export default function Booking() {
             <Toolbar>
               <Box width={"88%"} marginLeft={5}>
                 <Link to="/booking">
-                  <img width={50} src="/src/assets/logo.png" />
+                  <img width={50} src="logo.png" />
                 </Link>
               </Box>
 
